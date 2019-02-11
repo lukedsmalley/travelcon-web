@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Dashboard | TravelCon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <style>
+      body {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      h1, h2 {
+        font-weight: 300;
+        margin: 0.5rem 0;
+      }
+
+      h1 {
+        font-size: 72px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      .section {
+        margin-top: 2rem;
+      }
+
+      .button {
+        border-radius: 8px;
+        box-shadow: 0 2px 4px #aaa;
+        padding: 8px;
+        cursor: pointer;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dashboard</h1>
+    <h2 class="section not-checked-in hidden">You are not checked in to any rooms.</h2>
+    <div class="section checked-in hidden">
+      <h2>You are checked in.</h2>
+      <span class="button lock-button">Lock Door</span>
+      <span class="button unlock-button">Unlock Door</span>
+      <span class="button check-out-button">Check Out</span>
+    </div>
+    <div class="section no-reservations hidden">
+      <h2>You have not reserved any rooms.</h2>
+    </div>
+    <div class="section has-reservations hidden">
+      <h2>Check into your reserved room:</h2>
+      <div class="reservations"></div>
+    </div>
+    <span class="section button reserve-button">Create a Reservation</span>
+    <script src="./dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Check In | TravelCon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <style>
+      body {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      h1, h2 {
+        font-weight: 300;
+        margin: 0.5rem 0 2rem;
+      }
+
+      h1 {
+        font-size: 72px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .button {
+        border-radius: 8px;
+        box-shadow: 0 2px 4px #aaa;
+        padding: 8px;
+        cursor: pointer;
+        user-select: none;
+        margin: 2rem 0 8px;
+      }
+
+      .large-button {
+        font-size: 28px;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to your destination.</h1>
+    <h2>Please stand within range of the TravelCon camera and click below to complete the check-in process.</h2>
+    <span class="button large-button unlock-button">Check In</span>
+    <span class="button cancel-button">Cancel</span>
+    <script src="./checkin.js"></script>
+  </body>
+</html>

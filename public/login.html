@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Sign In | TravelCon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"/>
+    <script src="./login.js"></script> 
+    <style>
+      body {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      h1, h2 {
+        font-weight: 300;
+        margin: 0 0 0.5rem;
+      }
+
+      h1 {
+        font-size: 72px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TravelCon</h1>
+    <h2>Make reservations with confidence.</h2>
+    <h2>Your face is the key.</h2>
+    <div class="firebaseui-auth-container"></div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "travelcon-web",
+  "version": "1.0.0",
+  "description": "Web interface for making and fulfilling reservations (No more passbacks)",
+  "main": "app.js",
+  "author": "Luke Smalley, PantherHackers HackSquad",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.400.0",
+    "express": "^4.16.4",
+    "express-ws": "^4.0.0",
+    "fs-extra": "^7.0.1"
+  }
+}
